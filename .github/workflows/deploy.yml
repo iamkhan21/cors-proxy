@@ -23,4 +23,4 @@ jobs:
         with:
           packageManager: pnpm
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          command: pnpm run deploy
+          command: deploy --minify src/index.ts
