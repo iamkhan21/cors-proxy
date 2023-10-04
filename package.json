@@ -1,0 +1,16 @@
+{
+  "name": "cors-proxy",
+  "scripts": {
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler deploy --minify src/index.ts",
+    "update": "nlx taze -wI"
+  },
+  "dependencies": {
+    "hono": "3.7.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20231002.0",
+    "prettier": "3.0.3",
+    "wrangler": "3.10.1"
+  }
+}
