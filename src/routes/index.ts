@@ -1,1 +1,1 @@
-export * from './cors-proxy';
+export * from "./cors-proxy";
