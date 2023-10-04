@@ -4,7 +4,8 @@ This is a simple proxy server built using the Hono framework. It can be used to 
 
 ## Getting Started
 
-To use this service, append your target URL as a query parameter like so: https://cors-proxy.iamkhan.workers.dev/?target={YOUR_URL_HERE}
+To use this service, append your target URL as a query parameter like so:  
+https://cors-proxy.iamkhan.workers.dev/?target={YOUR_URL_HERE}
 
 
 ## About This Project
