@@ -1,0 +1,5 @@
+name = "cors-proxy"
+compatibility_date = "2023-10-04"
+
+[placement]
+mode = "smart"
