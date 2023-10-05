@@ -1,7 +1,7 @@
 import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { cache } from "hono/cache";
-import { handleCorsProxy } from "./routes";
+import { greeting, handleCorsProxy } from "./routes";
 import { CACHE_CONFIG, CORS_CONFIG, poweredBy } from "./midlewares";
 
 const app = new Hono();
@@ -12,6 +12,7 @@ app.get("*", cache(CACHE_CONFIG));
 app.use("*", poweredBy());
 
 // Routes
-app.all("*", handleCorsProxy());
+app.all("/cors", handleCorsProxy());
+app.all("*", greeting());
 
 export default app;
